@@ -1,0 +1,168 @@
+*{
+    padding: 0; 
+    margin: 0; 
+    border: 0;
+}
+
+*, *::before, *::after{box-sizing: border-box;}
+
+@font-face {
+    font-family: "Inter-Regular";
+    src: url("../fonts/Inter-Regular.woff2");
+}
+
+@font-face {
+    font-family: "Raleway-SemiBold";
+    src: url("../fonts/Raleway-SemiBold.woff2");
+}
+
+@font-face {
+    font-family: "MontserratAlternates-Bold";
+    src: url("../fonts/MontserratAlternates-Bold.woff2");
+}
+
+@font-face {
+    font-family: "MontserratAlternates-SemiBold";
+    src: url("../fonts/MontserratAlternates-SemiBold.woff2");
+}
+
+@font-face {
+    font-family: "Ubuntu-Regular";
+    src: url("../fonts/Ubuntu-Regular.woff2");
+}
+
+@font-face {
+    font-family: "Manrope-Semibold";
+    src: url("../fonts/Manrope-Semibold.woff2");
+}
+
+html, body{
+    line-height: 1;
+    font-size: 15px;
+    font-family: "Inter-Regular";
+    color: #222222;
+    background-color: #F6F7F9;
+    text-size-adjust: 100%;
+    scroll-behavior: smooth;
+    overscroll-behavior-y: none;
+}
+
+body._lock{overflow: hidden;}
+
+.container{
+    max-width: 1440px;
+    margin: 0px auto;
+    padding: 0px 60px;
+}
+
+picture{
+    img{display: block;}
+}
+
+:focus{outline: none;}
+
+h1, h2, h3, h4, h5{font-weight: normal;}
+
+h1{
+    font-family: "MontserratAlternates-Bold";
+    font-size: 60px;
+    line-height: 110%;
+}
+
+h2{
+    font-family: "MontserratAlternates-Bold";
+    font-size: 53px;
+    line-height: 120%;
+}
+
+h3{
+    font-family: "MontserratAlternates-Bold";
+    font-size: 48px;
+    line-height: 120%;
+}
+
+h4{
+    font-family: "MontserratAlternates-SemiBold";
+    font-size: 32px;
+    line-height: 120%;
+}
+
+h5{
+    font-family: "Raleway-SemiBold";
+    font-size: 18px;
+    line-height: 140%;
+}
+
+input, button, textarea{
+    border-radius: 8px;
+    font: inherit;
+}
+
+input, input:focus{appearance: none;}
+
+input, button{height: 44px;}
+
+input{
+    padding: 0 16px;
+    width: 100%;
+}
+
+input, textarea{
+    color: inherit;
+    transform: translate3d(0, 0, 0);
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+button{
+    padding: 0 24px;
+    color: #F8FAFC;
+    cursor: pointer;
+}
+
+textarea{
+    padding: 15px 16px;
+    resize: none;
+}
+
+@media(hover: hover) and (pointer: fine){
+    button{
+        transform: translate3d(0, 0, 0);
+        transition: background-color 0.3s ease;
+    }
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+.small-text{
+    font-size: 12px;
+    line-height: 120%;
+}
+
+@media(max-width: 1440.9px) and (min-width: 321px){
+    html, body{font-size: calc(13px + (15 - 13) * ((100vw - 321px) / (1440 - 321)));}
+    .container{padding: 0px calc(20px + (60 - 20) * ((100vw - 321px) / (1440 - 321)));}
+    h1{font-size: calc(30px + (60 - 30) * ((100vw - 321px) / (1440 - 321)));}
+    h2{font-size: calc(26px + (53 - 26) * ((100vw - 321px) / (1440 - 321)));}
+    h3{font-size: calc(24px + (48 - 24) * ((100vw - 321px) / (1440 - 321)));}
+    h4{font-size: calc(20px + (32 - 20) * ((100vw - 321px) / (1440 - 321)));}
+    h5{font-size: calc(16px + (18 - 16) * ((100vw - 321px) / (1440 - 321)));}
+    .small-text{font-size: calc(10px + (12 - 10) * ((100vw - 321px) / (1440 - 321)));}
+    input, button{height: calc(38px + (44 - 38) * ((100vw - 321px) / (1440 - 321)));}
+    button{padding: 0 calc(20px + (24 - 20) * ((100vw - 321px) / (1440 - 321)));}
+}
+
+@media(max-width: 320.9px){
+    html, body{font-size: 13px;}
+    .container{padding: 0px 20px;}
+    h1{font-size: 28px;}
+    h2{font-size: 23px;}
+    h3{font-size: 22px;}
+    h4{font-size: 20px;}
+    h5{font-size: 16px;}
+    .small-text{font-size: 10px;}
+    input, button{height: 38px;}
+    button{padding: 0 20px;}
+}
